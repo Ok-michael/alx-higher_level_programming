@@ -2,4 +2,4 @@
 lower_alphabets = ""
 for i in range(97, 123):
     lower_alphabets += chr(i)
-print(f"{lower_alphabets}", end='')
+print("{:s}".format(lower_alphabets), end='')
