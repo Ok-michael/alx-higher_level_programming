@@ -1,12 +1,21 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
+
+#check for positivity
 if number < 0:
-    number *= -1
-print("Last digit of", number, "is", (number % 10), end="")
-if (number % 10) > 5:
+    for_mod = number *-1
+else:
+    for_mod = number
+
+# extract the last digit
+for_mod %= 10
+
+# do the formal printing
+print("Last digit of", number, "is", (for_mod), end="")
+if (for_mod) > 5:
     print(" and is greater than 5")
-elif (number % 10) == 0:
+elif (for_mod) == 0:
     print(" and is 0")
-elif (number % 10 < 6) and (number % 10 != 0):
+elif (for_mod < 6) and (for_mod != 0):
     print(" and is less than 6 and not 0")
