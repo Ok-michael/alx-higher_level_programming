@@ -4,7 +4,7 @@ number = random.randint(-10000, 10000)
 
 # check for positivity
 if number < 0:
-    for_mod = number *-1
+    for_mod = number *- 1
 else:
     for_mod = number
 
