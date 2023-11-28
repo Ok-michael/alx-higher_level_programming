@@ -2,7 +2,7 @@
 import random
 number = random.randint(-10000, 10000)
 
-#check for positivity
+# check for positivity
 if number < 0:
     for_mod = number *-1
 else:
@@ -10,6 +10,9 @@ else:
 
 # extract the last digit
 for_mod %= 10
+
+if number < 0:
+    for_mod *= -1
 
 # do the formal printing
 print("Last digit of", number, "is", (for_mod), end="")
