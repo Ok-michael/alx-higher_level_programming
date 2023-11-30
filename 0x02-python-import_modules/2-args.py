@@ -15,4 +15,4 @@ if __name__ == "__main__":
     for x in sys.argv:
         if x != sys.argv[0]:
             print("{:d}: {:s}".format(i, x))
-            i += 1
+        i += 1
