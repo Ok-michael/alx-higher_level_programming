@@ -11,4 +11,4 @@ def only_diff_elements(set_1, set_2):
         if member not in set_1:
             delta.append(member)
 
-    return delta
+    return set(delta)
