@@ -10,8 +10,7 @@ def roman_to_int(roman_string):
         if rom_num.get(roman_string[i], 0) == 0:
             return (0)
 
-        if (i != (len(roman_string) - 1) and
-            rom_num[roman_string[i]] < rom_num[roman_string[i + 1]]):
+        if (i != (len(roman_string) - 1) and rom_num[roman_string[i]] < rom_num[roman_string[i + 1]]):
             num += rom_num[roman_string[i]] * -1
 
         else:
