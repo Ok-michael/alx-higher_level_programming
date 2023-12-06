@@ -1,0 +1,781 @@
+# callgrind format
+version: 1
+creator: pprofile
+event: usphit :microseconds/hit
+events: hits microseconds usphit
+cmd: ./8-main.py
+fl=./8-main.py
+fn=<module>:2
+2 2 308 154
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:986
+calls=1 986
+2 1 65474 65474
+4 1 222 222
+cfl=/home/michael/online_SE/alx-higher_level_programming/0x01-python-if_else_loops_functions/./8-uppercase.py
+cfn=uppercase:3
+calls=1 3
+4 1 1686 1686
+5 1 138 138
+cfl=/home/michael/online_SE/alx-higher_level_programming/0x01-python-if_else_loops_functions/./8-uppercase.py
+cfn=uppercase:3
+calls=1 3
+5 1 2861 2861
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec:1399
+1399 1 52 52
+1405 1 64 64
+1406 1 34 34
+1407 1 126 126
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec:1367
+calls=1 1367
+1407 1 12706 12706
+1408 1 33 33
+1410 1 32 32
+1421 1 31 31
+fn=_get_spec:1367
+1367 1 67 67
+1372 1 73 73
+1373 1 63 63
+1374 1 42 42
+1376 1 95 95
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_importer_cache:1330
+calls=1 1330
+1376 1 4984 4984
+1377 1 36 36
+1378 1 35 35
+1379 1 114 114
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:1498
+calls=1 1498
+1379 1 7088 7088
+1382 1 36 36
+1384 1 34 34
+1385 1 33 33
+fn=_path_importer_cache:1330
+1330 1 50 50
+1338 1 39 39
+1345 1 31 31
+1346 1 38 38
+1347 1 37 37
+1348 1 120 120
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_hooks:1317
+calls=1 1317
+1348 1 4534 4534
+1349 1 60 60
+1350 1 70 70
+fn=_path_hooks:1317
+1317 1 61 61
+1320 1 41 41
+1322 2 84 42
+1323 2 63 31
+1324 2 224 112
+cfl=<frozen zipimport>
+cfn=__init__:63
+calls=1 63
+1324 1 826 826
+cfl=<frozen importlib._bootstrap_external>
+cfn=path_hook_for_FileFinder:1590
+calls=1 1590
+1324 1 3161 3161
+1325 1 33 33
+1326 1 36 36
+fn=_path_stat:135
+135 5 151 30
+142 5 507 101
+fn=path_hook_for_FileFinder:1590
+1590 1 25 25
+1592 1 133 133
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isdir:159
+calls=1 159
+1592 1 700 700
+1594 1 105 105
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__:1459
+calls=1 1459
+1594 1 2196 2196
+fn=_path_isdir:159
+159 1 26 26
+161 1 31 31
+163 1 283 283
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_is_mode_type:145
+calls=1 145
+163 1 358 358
+fn=_path_is_mode_type:145
+145 2 114 57
+147 2 69 34
+148 2 164 82
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat:135
+calls=2 135
+148 2 209 104
+151 2 63 31
+fn=__init__:1459
+1459 1 64 64
+1463 1 45 45
+1464 4 169 42
+1465 3 501 167
+cfl=<frozen importlib._bootstrap_external>
+cfn=<genexpr>:1465
+calls=8 1465
+1465 8 427 53
+1466 1 49 49
+1468 1 44 44
+1469 1 92 92
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isabs:175
+calls=1 175
+1469 1 60 60
+1470 1 142 142
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join:121
+calls=1 121
+1470 1 480 480
+1471 1 41 41
+1472 1 38 38
+1473 1 37 37
+fn=<genexpr>:1465
+1465 16 427 26
+fn=_path_isabs:175
+175 2 55 27
+177 2 69 34
+fn=_path_join:121
+121 7 187 26
+123 14 733 52
+cfl=<frozen importlib._bootstrap_external>
+cfn=<listcomp>:123
+calls=7 123
+123 7 1556 222
+124 7 181 25
+fn=<listcomp>:123
+123 46 1175 25
+124 16 380 23
+fn=find_spec:1498
+1498 1 41 41
+1503 1 40 40
+1504 1 39 39
+1505 1 68 68
+1506 1 106 106
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat:135
+calls=1 135
+1506 1 144 144
+1509 1 43 43
+1510 1 144 144
+cfl=<frozen importlib._bootstrap_external>
+cfn=_fill_cache:1549
+calls=1 1549
+1510 1 1367 1367
+1511 1 39 39
+1513 1 118 118
+cfl=<frozen importlib._bootstrap_external>
+cfn=_relax_case:68
+calls=1 68
+1513 1 69 69
+1517 1 38 38
+1518 1 36 36
+1520 1 35 35
+1532 4 128 32
+1533 4 119 29
+1534 4 349 87
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join:121
+calls=4 121
+1534 4 1358 339
+1537 4 381 95
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message:222
+calls=4 222
+1537 4 211 52
+1538 4 130 32
+1539 1 85 85
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isfile:154
+calls=1 154
+1539 1 368 368
+1540 2 153 76
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec:1493
+calls=1 1493
+1540 1 1434 1434
+1541 1 34 34
+fn=_fill_cache:1549
+1549 1 40 40
+1551 1 39 39
+1552 1 35 35
+1553 1 836 836
+1560 1 64 64
+1561 1 300 300
+1577 1 49 49
+fn=_relax_case:68
+68 1 35 35
+70 1 34 34
+fn=_path_isfile:154
+154 1 25 25
+156 1 80 80
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_is_mode_type:145
+calls=1 145
+156 1 262 262
+fn=_get_spec:1493
+1493 1 34 34
+1494 1 116 116
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__:1004
+calls=1 1004
+1494 1 132 132
+1495 2 156 78
+cfl=<frozen importlib._bootstrap_external>
+cfn=spec_from_file_location:689
+calls=1 689
+1495 1 963 963
+1496 1 30 30
+fn=__init__:1004
+1004 1 30 30
+1007 1 61 61
+1008 1 40 40
+fn=spec_from_file_location:689
+689 1 54 54
+701 1 42 42
+713 1 38 38
+714 1 123 123
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isabs:175
+calls=1 175
+714 1 63 63
+726 1 140 140
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:342
+calls=1 342
+726 1 285 285
+727 1 38 38
+730 1 36 36
+740 1 35 35
+751 1 34 34
+752 1 35 35
+757 1 34 34
+fn=create_module:839
+839 1 23 23
+840 1 31 31
+fn=_get_cached:484
+484 1 22 22
+485 1 36 36
+486 1 31 31
+487 1 153 153
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source:354
+calls=1 354
+487 1 1580 1580
+fn=cache_from_source:354
+354 2 133 66
+372 2 78 39
+379 2 69 34
+380 2 175 87
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_split:127
+calls=2 127
+380 2 658 329
+381 2 75 37
+382 2 68 34
+383 2 63 31
+385 2 67 33
+386 2 61 30
+387 2 63 31
+388 2 61 30
+391 2 63 31
+392 2 61 30
+396 2 67 33
+397 2 63 31
+422 2 155 77
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join:121
+calls=2 121
+422 2 820 410
+fn=_path_split:127
+127 2 49 24
+129 2 282 141
+cfl=<frozen importlib._bootstrap_external>
+cfn=<genexpr>:129
+calls=4 129
+129 4 205 51
+130 2 55 27
+132 2 66 33
+fn=<genexpr>:129
+129 8 205 25
+fn=exec_module:842
+842 1 51 51
+844 1 123 123
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_code:914
+calls=1 914
+844 1 41137 41137
+845 1 32 32
+848 1 90 90
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed:211
+calls=1 211
+848 1 300 300
+fn=get_code:914
+914 1 70 70
+921 1 102 102
+cfl=<frozen importlib._bootstrap_external>
+cfn=_check_name_wrapper:516
+calls=1 516
+921 1 230 230
+922 1 38 38
+923 1 37 37
+924 1 38 38
+925 1 36 36
+926 1 35 35
+927 1 87 87
+928 1 96 96
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source:354
+calls=1 354
+928 1 1228 1228
+932 1 39 39
+933 1 170 170
+cfl=<frozen importlib._bootstrap_external>
+cfn=path_stats:1075
+calls=1 1075
+933 1 269 269
+937 1 46 46
+938 1 65 65
+939 1 158 158
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_data:1034
+calls=1 1034
+939 1 35346 35346
+943 1 38 38
+944 1 42 42
+945 1 37 37
+947 1 35 35
+948 1 172 172
+cfl=<frozen importlib._bootstrap_external>
+cfn=_classify_pyc:553
+calls=1 553
+948 1 646 646
+949 1 69 69
+950 1 46 46
+951 1 35 35
+964 2 124 62
+cfl=<frozen importlib._bootstrap_external>
+cfn=_validate_timestamp_pyc:586
+calls=1 586
+964 1 436 436
+965 1 33 33
+966 1 33 33
+967 1 34 34
+968 1 70 70
+969 1 35 35
+974 2 152 76
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message:222
+calls=1 222
+974 1 59 59
+975 1 35 35
+976 2 323 161
+cfl=<frozen importlib._bootstrap_external>
+cfn=_compile_bytecode:638
+calls=1 638
+976 1 504 504
+977 1 34 34
+978 1 34 34
+fn=_check_name_wrapper:516
+516 1 28 28
+517 1 32 32
+519 1 31 31
+522 1 84 84
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_filename:1029
+calls=1 1029
+522 1 53 53
+fn=get_filename:1029
+1029 1 22 22
+1032 1 30 30
+fn=path_stats:1075
+1075 1 34 34
+1077 1 88 88
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat:135
+calls=1 135
+1077 1 110 110
+1078 1 35 35
+fn=get_data:1034
+1034 1 28 28
+1036 1 59 59
+1037 1 34575 34575
+1038 1 683 683
+fn=_classify_pyc:553
+553 1 69 69
+569 1 45 45
+570 1 78 78
+574 1 77 77
+578 1 110 110
+cfl=<frozen importlib._bootstrap_external>
+cfn=_unpack_uint32:79
+calls=1 79
+578 1 193 193
+580 1 38 38
+583 1 33 33
+fn=_unpack_uint32:79
+79 3 118 39
+81 3 91 30
+82 3 125 41
+fn=_validate_timestamp_pyc:586
+586 1 31 31
+605 1 112 112
+cfl=<frozen importlib._bootstrap_external>
+cfn=_unpack_uint32:79
+calls=1 79
+605 1 74 74
+609 2 71 35
+610 1 78 78
+cfl=<frozen importlib._bootstrap_external>
+cfn=_unpack_uint32:79
+calls=1 79
+610 1 68 68
+fn=_compile_bytecode:638
+638 1 28 28
+640 1 95 95
+641 1 64 64
+642 1 152 152
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message:222
+calls=1 222
+642 1 52 52
+643 1 43 43
+644 1 37 37
+645 1 31 31
+fl=<frozen zipimport>
+fn=__init__:63
+63 1 58 58
+64 1 101 101
+67 1 41 41
+69 1 37 37
+72 1 36 36
+74 1 37 37
+75 1 148 148
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat:135
+calls=1 135
+75 1 193 193
+86 1 75 75
+88 1 93 93
+fl=/home/michael/online_SE/alx-higher_level_programming/0x01-python-if_else_loops_functions/./8-uppercase.py
+fn=<module>:3
+3 2 92 46
+fn=uppercase:3
+3 2 51 25
+4 2 54 27
+5 35 844 24
+6 33 863 26
+7 24 617 25
+9 9 212 23
+10 2 1903 951
+fl=<frozen importlib._bootstrap>
+fn=_find_and_load:986
+986 1 57 57
+988 1 229 229
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:143
+calls=1 143
+988 1 100 100
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:147
+calls=1 147
+988 1 1642 1642
+989 1 37 37
+990 1 33 33
+991 1 330 330
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load_unlocked:956
+calls=1 956
+991 1 62441 62441
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:151
+calls=1 151
+991 1 391 391
+cfl=<frozen importlib._bootstrap>
+cfn=cb:176
+calls=1 176
+991 1 210 210
+fn=__init__:143
+143 1 31 31
+144 1 36 36
+145 1 32 32
+fn=__enter__:147
+147 1 24 24
+148 1 111 111
+cfl=<frozen importlib._bootstrap>
+cfn=_get_module_lock:157
+calls=1 157
+148 1 988 988
+149 1 84 84
+cfl=<frozen importlib._bootstrap>
+cfn=acquire:78
+calls=1 78
+149 1 433 433
+fn=_get_module_lock:157
+157 1 66 66
+163 1 44 44
+164 1 34 34
+165 1 32 32
+166 1 39 39
+167 1 36 36
+168 1 60 60
+170 1 38 38
+171 1 33 33
+174 1 132 132
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:58
+calls=1 58
+174 1 325 325
+176 1 39 39
+187 1 38 38
+189 1 34 34
+191 1 31 31
+fn=__init__:58
+58 1 26 26
+59 1 37 37
+60 1 56 56
+61 1 109 109
+62 1 34 34
+63 1 30 30
+64 1 31 31
+fn=cb:176
+176 1 22 22
+177 1 29 29
+178 1 29 29
+182 1 64 64
+183 1 32 32
+185 1 31 31
+fn=acquire:78
+78 1 65 65
+84 1 41 41
+85 1 40 40
+86 1 30 30
+88 1 33 33
+89 1 31 31
+90 1 30 30
+91 1 55 55
+92 2 71 35
+101 1 32 32
+fn=_find_and_load_unlocked:956
+956 1 54 54
+957 1 73 73
+958 1 46 46
+959 1 64 64
+971 1 133 133
+cfl=<frozen importlib._bootstrap>
+cfn=_find_spec:890
+calls=1 890
+971 1 15290 15290
+972 1 35 35
+975 1 91 91
+cfl=<frozen importlib._bootstrap>
+cfn=_load_unlocked:650
+calls=1 650
+975 1 46585 46585
+976 1 34 34
+980 1 31 31
+fn=_find_spec:890
+890 1 84 84
+892 1 44 44
+893 1 35 35
+898 1 33 33
+904 1 35 35
+905 3 161 53
+906 3 285 95
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:863
+calls=3 863
+906 3 213 71
+907 3 89 29
+908 3 125 41
+914 3 450 150
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec:725
+calls=1 725
+914 1 159 159
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:867
+calls=3 867
+914 3 157 52
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec:800
+calls=1 800
+914 1 179 179
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:1399
+calls=1 1399
+914 1 13081 13081
+915 3 90 30
+917 1 30 30
+932 1 33 33
+fn=__enter__:863
+863 3 90 30
+865 3 123 41
+fn=find_spec:725
+725 1 27 27
+727 1 32 32
+729 1 58 58
+732 1 41 41
+fn=__exit__:867
+867 3 67 22
+869 3 90 30
+fn=find_spec:800
+800 1 25 25
+802 1 68 68
+805 1 85 85
+fn=_verbose_message:222
+222 7 171 24
+224 7 202 28
+fn=__init__:342
+342 1 26 26
+344 1 35 35
+345 1 31 31
+346 1 30 30
+347 1 61 61
+348 1 34 34
+351 1 31 31
+352 1 31 31
+fn=_load_unlocked:650
+650 1 27 27
+652 1 64 64
+654 1 65 65
+657 1 115 115
+cfl=<frozen importlib._bootstrap>
+cfn=module_from_spec:549
+calls=1 549
+657 1 4065 4065
+662 1 32 32
+663 1 29 29
+664 1 31 31
+665 1 29 29
+666 1 29 29
+671 1 90 90
+cfl=<frozen importlib._bootstrap_external>
+cfn=exec_module:842
+calls=1 842
+671 1 41737 41737
+682 1 38 38
+683 1 32 32
+684 1 78 78
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message:222
+calls=1 222
+684 1 51 51
+686 1 32 32
+688 1 30 30
+fn=module_from_spec:549
+549 1 57 57
+552 1 39 39
+553 1 40 40
+556 1 86 86
+cfl=<frozen importlib._bootstrap_external>
+cfn=create_module:839
+calls=1 839
+556 1 54 54
+560 1 63 63
+561 1 97 97
+cfl=<frozen importlib._bootstrap>
+cfn=_new_module:35
+calls=1 35
+561 1 83 83
+562 1 89 89
+cfl=<frozen importlib._bootstrap>
+cfn=_init_module_attrs:477
+calls=1 477
+562 1 3422 3422
+563 1 30 30
+fn=_new_module:35
+35 1 23 23
+36 1 60 60
+fn=_init_module_attrs:477
+477 1 49 49
+481 1 41 41
+487 1 34 34
+488 1 32 32
+489 1 31 31
+510 1 30 30
+511 1 32 32
+515 1 33 33
+516 1 31 31
+517 1 121 121
+cfl=<frozen importlib._bootstrap>
+cfn=parent:389
+calls=1 389
+517 1 90 90
+521 1 33 33
+522 1 32 32
+526 1 77 77
+527 1 37 37
+533 1 85 85
+cfl=<frozen importlib._bootstrap>
+cfn=has_location:397
+calls=1 397
+533 1 53 53
+534 1 42 42
+535 1 32 32
+536 1 34 34
+540 1 38 38
+541 1 116 116
+cfl=<frozen importlib._bootstrap>
+cfn=cached:376
+calls=1 376
+541 1 2059 2059
+542 1 32 32
+543 1 109 109
+cfl=<frozen importlib._bootstrap>
+cfn=cached:376
+calls=1 376
+543 1 71 71
+546 1 34 34
+fn=parent:389
+389 1 25 25
+392 1 31 31
+393 1 32 32
+fn=has_location:397
+397 1 23 23
+399 1 30 30
+fn=cached:376
+376 2 46 23
+378 2 57 28
+379 1 30 30
+380 1 30 30
+382 1 86 86
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_cached:484
+calls=1 484
+382 1 1824 1824
+383 2 56 28
+fn=_call_with_frames_removed:211
+211 1 84 84
+219 1 122 122
+cfl=/home/michael/online_SE/alx-higher_level_programming/0x01-python-if_else_loops_functions/./8-uppercase.py
+cfn=<module>:3
+calls=1 3
+219 1 92 92
+fn=__exit__:151
+151 1 26 26
+152 1 87 87
+cfl=<frozen importlib._bootstrap>
+cfn=release:103
+calls=1 103
+152 1 276 276
+fn=release:103
+103 1 24 24
+104 1 33 33
+105 1 34 34
+106 1 29 29
+108 1 30 30
+109 1 30 30
+110 1 30 30
+111 1 30 30
+112 1 32 32
