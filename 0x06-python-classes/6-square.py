@@ -66,19 +66,23 @@ class Square:
 
     @property
     def position(self):
+        """ Method that returns the position value
         """
-            position - this method returns the self.__position
-        """
-        return self.__postion
+        return self.__position
 
     @position.setter
     def position(self, value):
+        """ Method that sets the position value of a square object
         """
-            position - this overload of the previous method takes two params
-            and sets the postion with value
-        """
-        if (type(value) is not tuple) or (len(value) != 2):
+        if not isinstance(value, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
-        if not ((type(value[0]) is int) and (type(value[1]) is int)):
+        if len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(value[0], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(value[1], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
+
