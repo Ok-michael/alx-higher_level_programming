@@ -3,6 +3,7 @@
 """Class Square defines a square.
     """
 
+
 class Square:
     """Class Square is used to define a square
     """
@@ -14,6 +15,5 @@ class Square:
         Args:
             param (int): this is the size of the square
         """
-
 
         self.__size = size
