@@ -6,7 +6,7 @@ This module is composed by a class that defines a Rectangle
 
 class Rectangle:
     """ Class that defines a rectangle """
-    
+
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
@@ -18,6 +18,7 @@ class Rectangle:
 
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -70,41 +71,39 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """
-            Method that calculates the Rectangle area
-            Returns: the result of the calculated perimeter
+        """ Method that calculates the Rectangle area
+        Returns:
+            rectangle area
         """
 
-        return (self.width * self.height)
+        return self.width * self.height
 
     def perimeter(self):
-        """
-            this method calculates the perimeter of a rectangle
-            Returns: the result of the calculated perimeter
+        """ Method that calculates the Rectangle perimeter
+        Returns:
+            rectangle perimeter
         """
 
         if self.width == 0 or self.height == 0:
             return 0
 
-        return 2 * (self.width + self.height)
+        return (2 * self.width) + (2 * self.height)
 
     def __str__(self):
-        """
-            this method returns a rectangle build with width and
-            height consisting of "#"
-            Return: it returns a string representation of the
-            the rectangle
+        """ Method that returns the Rectangle #
+        Returns:
+            str of the rectangle
         """
 
-        if self.width == 0:
-            return ""
-        if self.height == 0:
-            return ""
-        string = ""
-        for k in range(self.height - 1):
-            string = string + '#' * self.width + '\n'
-        string = string + '#' * self.width
-        return string
+        rectangle = ""
+
+        if self.width == 0 or self.height == 0:
+            return rectangle
+
+        for i in range(self.height):
+            rectangle += ("#" * self.width) + "\n"
+
+        return rectangle[:-1]
 
     def __repr__(self):
         """ Method that returns the string represantion of the instance
@@ -118,5 +117,5 @@ class Rectangle:
         """ Method that prints a message when the instance is deleted
         """
 
-        Rectangle.number_of_instance -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
