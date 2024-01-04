@@ -14,6 +14,9 @@ class Rectangle:
         """
             this method __ini__ is responsible for setting up
             any instance of this class
+            Args:
+                width ....
+                height ...
         """
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
