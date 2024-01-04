@@ -4,6 +4,7 @@ This module contains an algorithm that resolves the N-Queen puzzle
 using backtracking
 """
 
+
 def isSafe(m_queen, nqueen):
     """ Method that determines if the queens can or can't kill each other
     Args:
@@ -53,7 +54,7 @@ def Queen(m_queen, nqueen):
 
     m_queen[nqueen] = -1
 
-    while((m_queen[nqueen] < len(m_queen) - 1)):
+    while ((m_queen[nqueen] < len(m_queen) - 1)):
 
         m_queen[nqueen] += 1
 
