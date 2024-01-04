@@ -6,9 +6,8 @@
 
 class Rectangle:
     """
-        This class Rectangle defines a rectangle
+        Class Rectangle defines a rectangle
     """
-    pass
 
     def __init__(self, width=0, height=0):
         """
