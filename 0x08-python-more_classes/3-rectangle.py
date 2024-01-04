@@ -99,6 +99,7 @@ class Rectangle:
         if self.height == 0:
             return ""
         string = ""
-        for k in range(self.height):
+        for k in range(self.height - 1):
             string = string + '#' * self.width + '\n'
+        string = string + '#' * self.width
         return string
