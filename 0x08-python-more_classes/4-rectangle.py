@@ -104,7 +104,7 @@ class Rectangle:
         string = string + '#' * self.width
         return string
 
-      def __repr__(self):
+    def __repr__(self):
         """ Method that returns the string represantion of the instance
         Returns:
             string represenation of the object
