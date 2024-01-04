@@ -6,16 +6,17 @@
 
 class Rectangle:
     """
-        Class Rectangle defines a rectangle
+        This class Rectangle defines a rectangle
     """
+    pass
 
     def __init__(self, width=0, height=0):
         """
             this method __ini__ is responsible for setting up
             any instance of this class
             Args:
-                width: width of the rectangle
-                height: height of the rectangle
+                width ....
+                height ...
         """
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
@@ -75,19 +76,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-    def area(self):
-        """
-            this method calculates the area of the rectangle
-            Return: it returns the result of the calculated area
-        """
-
-        return (self.__width * self.__height)
-
-    def perimeter(self):
-        """
-            this method calculates the perimeter of the rectangle
-            Return: it returns the result of the calculated perimeter
-        """
-
-        return 2 * (self.__width + self.__height)
