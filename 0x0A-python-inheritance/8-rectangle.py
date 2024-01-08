@@ -18,8 +18,7 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """ this class extends BaseGeometry and further implements some
-        methods """
+    """ this class extends BaseGeometry """
 
     def __init__(self, width, height):
         """ this is the constructor and it does the setups """
