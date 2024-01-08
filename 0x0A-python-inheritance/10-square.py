@@ -44,6 +44,7 @@ class Square(Rectangle):
         """ this is the constructor and it does the config setups """
         self.integer_validator("size", size)
         self.__size = size
+        super().__init__(size, size)
 
     def area(self):
         """ this method evaluates the area of the square"""
