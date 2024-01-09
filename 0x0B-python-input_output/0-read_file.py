@@ -4,6 +4,5 @@
 
 def read_file(filename=""):
     """ reads the passed text file """
-    
     with open(filename, 'r') as f:
         print(f.read(), end='')
